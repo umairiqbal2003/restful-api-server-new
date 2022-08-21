@@ -39,7 +39,7 @@ app.get('/user/:userId', (req,res)=>{
     
     let isFound = false;
 
-    for( i=0 ; i < users.length ; i++){
+    for( let i=0 ; i < users.length ; i++){
 
       if(users[i].id == userId){
         res.send(users[i])
