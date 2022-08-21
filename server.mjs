@@ -62,7 +62,7 @@ app.put('/user/:userId', (req, res) => {
   let userId = req.params.userId;
   let userIndex = -1;
   
-  for( i=0 ; i < users.length ; i++){
+  for( let i=0 ; i < users.length ; i++){
 
     if(users[i].id == userId){
       userIndex = i
@@ -89,7 +89,7 @@ app.delete('/user/:userId', (req, res) => {
   let userId = req.params.userId;
   let userIndex = -1;
   
-  for( i=0 ; i < users.length ; i++){
+  for( let i=0 ; i < users.length ; i++){
 
     if(users[i].id == userId){
       userIndex = i
